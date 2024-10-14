@@ -1,5 +1,5 @@
 /*
-See LICENSE folder for this sample’s licensing information.
+See the LICENSE.txt file for this sample’s licensing information.
 
 Abstract:
 Converts depth values to JET values.
@@ -150,7 +150,7 @@ class DepthToJETConverter: FilterRenderer {
         }
         
         jetBuffer.contents().bindMemory(to: JETParams.self, capacity: 1)
-            .assign(repeating: self.jetParams, count: 1)
+            .update(repeating: self.jetParams, count: 1)
         
         self.jetParamsBuffer = jetBuffer
     }
