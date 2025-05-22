@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1321EB472DDFBBFA0076D365 /* StreamingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1321EB462DDFBBFA0076D365 /* StreamingManager.swift */; };
 		261FA1F71E945EEA00BE8D47 /* VideoMixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261FA1F61E945EEA00BE8D47 /* VideoMixer.swift */; };
 		261FA1F91E94641700BE8D47 /* Mixer.metal in Sources */ = {isa = PBXBuildFile; fileRef = 261FA1F81E94641700BE8D47 /* Mixer.metal */; };
 		2633CF1D1E7C65D500FC80E1 /* DepthToJETConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2633CF1C1E7C65D500FC80E1 /* DepthToJETConverter.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1321EB462DDFBBFA0076D365 /* StreamingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingManager.swift; sourceTree = "<group>"; };
 		261FA1F61E945EEA00BE8D47 /* VideoMixer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoMixer.swift; sourceTree = "<group>"; };
 		261FA1F81E94641700BE8D47 /* Mixer.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Mixer.metal; sourceTree = "<group>"; };
 		2633CF1C1E7C65D500FC80E1 /* DepthToJETConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepthToJETConverter.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				E46129031CF4C0B8004FE176 /* PreviewMetalView.swift */,
 				E4E160DA1D00979000C83A5A /* FilterRenderer.swift */,
 				2633CF1C1E7C65D500FC80E1 /* DepthToJETConverter.swift */,
+				1321EB462DDFBBFA0076D365 /* StreamingManager.swift */,
 				261FA1F61E945EEA00BE8D47 /* VideoMixer.swift */,
 				2672370F1E79BFD1003D2EAA /* Shaders */,
 				E422DFBE1CEF894F0047D7A4 /* Main.storyboard */,
@@ -229,6 +232,7 @@
 				261FA1F71E945EEA00BE8D47 /* VideoMixer.swift in Sources */,
 				261FA1F91E94641700BE8D47 /* Mixer.metal in Sources */,
 				E4A8A1421CF6188A006823AB /* PassThrough.metal in Sources */,
+				1321EB472DDFBBFA0076D365 /* StreamingManager.swift in Sources */,
 				E422DFCF1CEF8AF50047D7A4 /* AppDelegate.swift in Sources */,
 				C3B256731FDE655200617DD7 /* HistogramCalculator.m in Sources */,
 				C3444A7D1FFE6110002D901D /* AAPLTransforms.mm in Sources */,

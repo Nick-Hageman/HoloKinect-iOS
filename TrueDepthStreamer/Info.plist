@@ -2,6 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>This app uses Bluetooth to connect to nearby devices</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>This app uses Bluetooth to discover and connect to nearby devices</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_depth-stream._tcp</string>
+		<string>_depth-stream._udp</string>
+	</array>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>This app needs local network access to stream camera data to Vision Pro</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

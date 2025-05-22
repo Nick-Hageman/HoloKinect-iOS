@@ -13,6 +13,8 @@ import Accelerate
 
 @available(iOS 11.1, *)
 class CameraViewController: UIViewController, AVCaptureDataOutputSynchronizerDelegate {
+    // Property for streaming
+    private let streamingManager = StreamingManager()
     
     // MARK: - Properties
     
@@ -158,6 +160,9 @@ class CameraViewController: UIViewController, AVCaptureDataOutputSynchronizerDel
         sessionQueue.async {
             self.configureSession()
         }
+        
+        // Add streaming setup
+        streamingManager.startAdvertising()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -811,6 +816,9 @@ class CameraViewController: UIViewController, AVCaptureDataOutputSynchronizerDel
             
             cloudView?.setDepthFrame(depthData, withTexture: videoPixelBuffer)
         }
+        // Adding this line to stream the data
+        streamingManager.sendFrameData(rgbPixelBuffer: videoPixelBuffer,
+                                     depthPixelBuffer: depthPixelBuffer)
     }
     
     func updateDepthLabel(depthFrame: CVPixelBuffer, videoFrame: CVPixelBuffer) {
